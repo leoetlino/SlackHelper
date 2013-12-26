@@ -1,0 +1,23 @@
+{
+    "name": "leoetlino/slack-helper",
+    "description": "Standalone PHP library for easily sending messages to Slack.",
+    "keywords": ["slack", "attachment", "hook", "webhook", "message", "push", "pusher"],
+    "homepage": "https://github.com/leoetlino/SlackHelper",
+    "type": "standalone",
+    "license": "GPL2",
+    "authors": [
+        {
+            "name": "Léo Lam",
+            "email": "leo@innovatetechnologi.es "
+        },
+        {
+            "name": "Contributors",
+            "homepage": "https://github.com/leoetlino/SlackHelper/contributors"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Innovate": ["src/"]
+        }
+    }
+}
