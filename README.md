@@ -3,6 +3,8 @@ SlackHelper
 
 Object-oriented classes for sending data via incoming webhooks.
 
+This repository is not completely ready - the documentation needs to be added and there needs to be an option to set the team URL.
+
 License
 =======
 (c) Léo Lam, 2014.
