@@ -1,9 +1,15 @@
 SlackHelper
 ===========
 
-Object-oriented classes for sending data via incoming webhooks.
+**Object-oriented classes for sending data via incoming webhooks.**
 
-This repository is not completely ready - the documentation needs to be added and there needs to be an option to set the team URL.
+This repository is not completely ready:
+* Work on the documentation.
+* Support Composer.
+* Allow specifying a different team URL - right now, you need to modify the team URL manually!
+* Add usage.
+
+Any pull requests are welcome!
 
 License
 =======
@@ -12,4 +18,4 @@ License
 For the full copyright and license information, please view the LICENSE file
 that was distributed with this source code.
 
-**Disclaimer** - This repository is not affiliated with Slack, or Tiny Speck.
+**Disclaimer:** This repository is not affiliated with Slack, or Tiny Speck.
