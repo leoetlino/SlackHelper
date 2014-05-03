@@ -115,6 +115,7 @@ class Attachment implements \JsonSerializable {
     }
     
     public function addField($title, $value, $isShort = false) {
+        $value = preg_replace_callback("/(&#[0-9]+;)/", function($m) { return mb_convert_encoding($m[1], "UTF-8", "HTML-ENTITIES"); }, $value);
         $this->fields[] = array(
             'title' => $title,
             'value' => $value,
