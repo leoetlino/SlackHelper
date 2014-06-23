@@ -52,7 +52,10 @@ class Attachment implements \JsonSerializable {
      * @var array
      */
     private $fields;
-    
+
+    // Add message formatting for attachments
+    private $mrkdwn_in = ['pretext', 'text', 'title', 'fields', 'fallback'];
+
     /**
      * Constructor function
      * 
