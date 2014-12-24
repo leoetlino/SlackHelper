@@ -65,7 +65,7 @@ class Message implements \JsonSerializable {
      */
     public function __construct($message, $channel = null,
             $username = null, $emoji = null, $attachments = null) {
-        $this->message = html_entity_decode($message);
+        $this->message = html_entity_decode($message, ENT_QUOTES);
         $this->channel = $channel;
         $this->username = $username;
         $this->emoji = $emoji;

@@ -69,8 +69,8 @@ class Attachment implements \JsonSerializable {
         $this->fallback = $fallback;
         $this->color = $color;
         $this->fields = $fields;
-        $this->text = html_entity_decode($text);
-        $this->pretext = html_entity_decode($pretext);
+        $this->text = html_entity_decode($text, ENT_QUOTES);
+        $this->pretext = html_entity_decode($pretext, ENT_QUOTES);
     }
     
     public function jsonSerialize() {
@@ -120,7 +120,7 @@ class Attachment implements \JsonSerializable {
     public function addField($title, $value, $isShort = false) {
         $this->fields[] = array(
             'title' => $title,
-            'value' => html_entity_decode($value),
+            'value' => html_entity_decode($value, ENT_QUOTES),
             'short' => $isShort,
         );
         
